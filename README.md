@@ -1,5 +1,18 @@
 <h1 align="center"> Key Findings from Built Environment Data Tool </h1>
-The [Built Environment Indicators and Health Interactive Map Tool](https://github.com/mattgerken/dc-built-environment-map-tool) originated as an October 2023 Data Science @ DC Hacktoberfest project. The tool sheds light on the relationship between the built environment and public health outcomes in the District of Columbia; it incorporates 41 data measures categorized into 9 Drivers (Education, Employment, Financial Institutions, Housing, Transportation, Food Environment, Medical Care, Outdoor Environment, and Community Safety) utilizing 48 datasets on Open Data DC. I provide my analysis of key findings from the tool below.
+
+The [Built Environment Indicators and Health Interactive Map Tool](https://github.com/mattgerken/dc-built-environment-map-tool) originated as an October 2023 Data Science @ DC Hacktoberfest project. The tool sheds light on the relationship between the built environment and public health outcomes in the District of Columbia; it incorporates 41 data measures categorized into the following 9 Drivers utilizing 48 datasets on Open Data DC: 
+
+* Education
+* Employment
+* Financial Institutions
+* Housing
+* Transportation
+* Food Environment
+* Medical Care
+* Outdoor Environment
+* Community Safety
+
+My analysis below summarizes key findings from the tool.
 
 # Overall Findings
 
