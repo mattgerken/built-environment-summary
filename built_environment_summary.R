@@ -528,55 +528,55 @@ green_red_palette <- scales:::brewer_pal(type = "div", palette = "RdYlGn")(11)
 green_red_palette_dark <- colorspace::darken(green_red_palette, amount = 0.2)
 
 ggwashinfographic <- finaldata %>%
-  select(m1.1_schools:m9.5_HIN) %>%
+  select(m1_1_schools:m9_5_HIN) %>%
   pivot_longer(
-    cols = m1.1_schools:m9.5_HIN,
+    cols = m1_1_schools:m9_5_HIN,
     names_to = "measure",
     values_to = "value"
   ) %>%
   filter(!is.na(value)) %>%
   # create all labels
-  mutate(label = case_when(measure == "m1.1_schools" ~ "Schools",
-                           measure == "m1.2_quality" ~ "Modernized schools",
-                           measure == "m1.3_playgrounds" ~ "Playgrounds",
-                           measure == "m1.4_crossing_guards" ~ "Crossing guards",
-                           measure == "m1.5_safe_passage" ~ "Safe Passage area",
-                           measure == "m1.6_library" ~ "Libraries",
-                           measure == "m1.7_wireless_hotspot" ~ "Wireless hotspots",
-                           measure == "m1.8_broadband" ~ "Broadband internet access",
-                           measure == "m1.9_recreation_center" ~ "Recreation center",
-                           measure == "m2.1_commute" ~ "Commutes",
-                           measure == "m3.1_banks" ~ "Banking institutions",
-                           measure == "m3.2_check_cashing" ~ "Not close to check cashing places",
-                           measure == "m4.1_quality" ~ "Housing stock quality",
-                           measure == "m4.2_share_since_1970" ~ "Share of homes built since 1970",
-                           measure == "m4.3_affordable" ~ "Share of homes that are affordable",
-                           measure == "m4.4_vacant_buildings" ~ "Not close to vacant or blighted homes",
-                           measure == "m5.1_buses" ~ "Buses",
-                           measure == "m5.2_metro" ~ "Metro stations",
-                           measure == "m5.3_capital_bikeshare" ~ "Capital Bikeshare",
-                           measure == "m5.4_bike_lanes" ~ "Road area covered by bike lanes",
-                           measure == "m5.5_sidewalk_quality" ~ "311 requests that are not for sidewalk repair",
-                           measure == "m5.6_parking" ~ "Not alleys or parking lots",
-                           measure == "m6.1_grocery_store" ~ "Grocery stores",
-                           measure == "m6.2_low_food_access" ~ "Not in Low Food Access areas",
-                           measure == "m6.3_farmers_markets" ~ "Farmers Markets",
-                           measure == "m6.4_healthy_corner_store" ~ "Healthy corner stores",
-                           measure == "m6.5_restaurants" ~ "Restaurants",
-                           measure == "m6.6_liquor_store" ~ "Not close to liquor stores",
-                           measure == "m7.1_health_care" ~ "Health care facilities",
-                           measure == "m7.2_mental_health" ~ "Mental health facilities and providers",
-                           measure == "m8.1_urban_tree_canopy" ~ "Urban tree canopy",
-                           measure == "m8.2_parks" ~ "Parks",
-                           measure == "m8.3_trails" ~ "Trails",
-                           measure == "m8.4_land_use" ~ "Mix of land uses",
-                           measure == "m8.5_positive" ~ "Positive land use",
-                           measure == "m8.6_flood_plains" ~ "Not within flood plain",
-                           measure == "m9.1_vacant_lots" ~ "Not close to vacant lots",
-                           measure == "m9.2_streetlights" ~ "Sidewalks covered by streetlights",
-                           measure == "m9.3_police" ~ "Police stations",
-                           measure == "m9.4_fire_stations" ~ "Fire stations",
-                           measure == "m9.5_HIN" ~ "Not close to High Injury Network Corridor"))
+  mutate(label = case_when(measure == "m1_1_schools" ~ "Schools",
+                           measure == "m1_2_quality" ~ "Modernized schools",
+                           measure == "m1_3_playgrounds" ~ "Playgrounds",
+                           measure == "m1_4_crossing_guards" ~ "Crossing guards",
+                           measure == "m1_5_safe_passage" ~ "Safe Passage area",
+                           measure == "m1_6_library" ~ "Libraries",
+                           measure == "m1_7_wireless_hotspot" ~ "Wireless hotspots",
+                           measure == "m1_8_broadband" ~ "Broadband internet access",
+                           measure == "m1_9_recreation_center" ~ "Recreation center",
+                           measure == "m2_1_commute" ~ "Commutes",
+                           measure == "m3_1_banks" ~ "Banking institutions",
+                           measure == "m3_2_check_cashing" ~ "Not close to check cashing places",
+                           measure == "m4_1_quality" ~ "Housing stock quality",
+                           measure == "m4_2_share_since_1970" ~ "Share of homes built since 1970",
+                           measure == "m4_3_affordable" ~ "Share of homes that are affordable",
+                           measure == "m4_4_vacant_buildings" ~ "Not close to vacant or blighted homes",
+                           measure == "m5_1_buses" ~ "Buses",
+                           measure == "m5_2_metro" ~ "Metro stations",
+                           measure == "m5_3_capital_bikeshare" ~ "Capital Bikeshare",
+                           measure == "m5_4_bike_lanes" ~ "Road area covered by bike lanes",
+                           measure == "m5_5_sidewalk_quality" ~ "311 requests that are not for sidewalk repair",
+                           measure == "m5_6_parking" ~ "Not alleys or parking lots",
+                           measure == "m6_1_grocery_store" ~ "Grocery stores",
+                           measure == "m6_2_low_food_access" ~ "Not in Low Food Access areas",
+                           measure == "m6_3_farmers_markets" ~ "Farmers Markets",
+                           measure == "m6_4_healthy_corner_store" ~ "Healthy corner stores",
+                           measure == "m6_5_restaurants" ~ "Restaurants",
+                           measure == "m6_6_liquor_store" ~ "Not close to liquor stores",
+                           measure == "m7_1_health_care" ~ "Health care facilities",
+                           measure == "m7_2_mental_health" ~ "Mental health facilities and providers",
+                           measure == "m8_1_urban_tree_canopy" ~ "Urban tree canopy",
+                           measure == "m8_2_parks" ~ "Parks",
+                           measure == "m8_3_trails" ~ "Trails",
+                           measure == "m8_4_land_use" ~ "Mix of land uses",
+                           measure == "m8_5_positive" ~ "Positive land use",
+                           measure == "m8_6_flood_plains" ~ "Not within flood plain",
+                           measure == "m9_1_vacant_lots" ~ "Not close to vacant lots",
+                           measure == "m9_2_streetlights" ~ "Sidewalks covered by streetlights",
+                           measure == "m9_3_police" ~ "Police stations",
+                           measure == "m9_4_fire_stations" ~ "Fire stations",
+                           measure == "m9_5_HIN" ~ "Not close to High Injury Network Corridor"))
 
 measure_data <- ggwashinfographic %>%
   # get the descriptive stats we need
@@ -647,7 +647,7 @@ ggplot() +
        subtitle = paste0("Neighborhoods are closer to education, transportation, and financial institution features but have lower levels of access to<br>affordable housing."),
        caption = paste0("**Source:** District of Columbia Built Environment Indicators and Health Interactive Map Tool<br>**Notes:** Black dots represent the average DC neighborhood"))
 
-ggsave(filename = "infographic.png", bg="white", height = 8, width = 8)
+ggsave(filename = "infographic.png", bg="white", height = 7, width = 7)
 
 
 
