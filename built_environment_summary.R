@@ -628,8 +628,8 @@ ggplot() +
         legend.position = "none",
         panel.grid.major = element_blank(),
         plot.margin = margin(r = 10, l = 20, t = 5, b = 5),
-        plot.background = element_rect(fill = "#fafafa", colour = NA),
-        panel.background = element_rect(fill = "#fafafa", colour = NA),
+        #plot.background = element_rect(fill = "#fafafa", colour = NA),
+        #panel.background = element_rect(fill = "#fafafa", colour = NA),
         plot.caption = element_markdown(hjust = 0, size = 8),
         plot.title = element_markdown(size = 12),
         plot.subtitle = element_markdown(size = 9)) + 
@@ -648,7 +648,6 @@ ggplot() +
        caption = paste0("**Source:** District of Columbia Built Environment Indicators and Health Interactive Map Tool<br>**Notes:** Black dots represent the average DC neighborhood"))
 
 ggsave(filename = "infographic.png", bg="white", height = 7, width = 7)
-
 
 
 
