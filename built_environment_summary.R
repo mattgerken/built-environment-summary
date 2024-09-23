@@ -628,8 +628,8 @@ ggplot() +
         legend.position = "none",
         panel.grid.major = element_blank(),
         plot.margin = margin(r = 10, l = 20, t = 5, b = 5),
-        #plot.background = element_rect(fill = "#fafafa", colour = NA),
-        #panel.background = element_rect(fill = "#fafafa", colour = NA),
+        plot.background = element_rect(fill = "#ffffff", colour = NA),
+        panel.background = element_rect(fill = "#ffffff", colour = NA),
         plot.caption = element_markdown(hjust = 0, size = 8),
         plot.title = element_markdown(size = 12),
         plot.subtitle = element_markdown(size = 9)) + 
