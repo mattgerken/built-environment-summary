@@ -645,7 +645,7 @@ ggplot() +
   labs(y = NULL,
        x = NULL,
        subtitle = paste0("Neighborhoods are closer to education, transportation, and financial institution features but have lower levels of access to<br>affordable housing."),
-       caption = paste0("**Source:** District of Columbia Built Environment Indicators and Health Interactive Map Tool<br>**Notes:** Black dots represent the average DC neighborhood"))
+       caption = paste0("**Source:** District of Columbia Built Environment Indicators and Health Interactive Map Tool<br>**Notes:** Black dots represent the average DC neighborhood. For each data measure, color corresponds to the average neighborhood and<br>bars represent the full range of values across neighborhoods."))
 
 ggsave(filename = "infographic.png", bg="white", height = 7, width = 7)
 
