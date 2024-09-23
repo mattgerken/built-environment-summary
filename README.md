@@ -31,6 +31,10 @@ Reflections:
 * The tool **does not imply** that built environment features are the main factor influencing health outcomes in the District
 * The tool serves as a starting point for further investigation into **potential connections with health outcomes**, rather than establishing definitive causal relationships 
 
+<p align="center">
+  <img src="https://github.com/mattgerken/built-environment-summary/blob/main/infographic.png?raw=true" width="60%">
+</p>
+
 # Education
 
 * Most neighborhoods in D.C. are in close proximity to schools, wireless hotspots, recreation centers, and libraries, with more mixed access to playgrounds and to schools that have had full modernizations in the last five years
